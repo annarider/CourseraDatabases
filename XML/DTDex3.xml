@@ -1,7 +1,7 @@
 <!DOCTYPE countries [
     <!ELEMENT countries (country*)>
-    <!ELEMENT country (city | language)>
-    <!ATTLIST country name ID #REQUIRED 
+    <!ELEMENT country (city*, language*)>
+    <!ATTLIST country name CDATA #REQUIRED 
         population CDATA #REQUIRED
         area CDATA #REQUIRED >
 
